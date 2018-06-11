@@ -78,6 +78,7 @@ class SubjectRequisition(
 
     def save(self, *args, **kwargs):
         self.clinic_verified = 'Yes'
+        self.clinic_verified_datetime = timezone.now()
         super().save(*args, **kwargs)
 
     def get_search_slug_fields(self):

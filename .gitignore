@@ -13,6 +13,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+.project
+.pydevproject
 .eggs/
 lib/
 lib64/
