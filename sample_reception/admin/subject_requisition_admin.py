@@ -6,8 +6,7 @@ from edc_lab.admin import (
     requisition_fieldset,
     requisition_status_fieldset,
     requisition_identifier_fieldset,
-    requisition_identifier_fields,
-    requisition_verify_fieldset)
+    requisition_identifier_fields)
 
 from ..admin_site import sample_reception_admin
 from ..models import SubjectRequisition
@@ -31,12 +30,12 @@ class SubjectRequisitionAdmin(RequisitionAdminMixin,
         (None, {
             'fields': (
                 'subject_identifier',
-                'requisition_identifier',
+#                 'requisition_identifier',
                 'requisition_datetime',
                 'panel',
                 'visit_code',
                 'clinician_initials',
-                'protocol_number',
+#                 'protocol_number',
                 'specimen_type',
                 'specimen_condition',
                 'site_code',
